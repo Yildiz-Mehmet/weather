@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vh;
+  height: 100vh;
+  background: url(./image/peakpx.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* body::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+} */
+i {
+  color: aliceblue;
+}
+form {
+  width: 100vw;
+  height: 2.5rem;
+  display: flex;
+  background-color: rgba(106, 148, 216, 0.5);
+  cursor: pointer;
+  padding: 8px 0 8px 2rem;
+}
+form:hover {
+  background-color: rgba(106, 148, 216, 0.6);
+}
+input {
+  width: 20rem;
+  border-radius: 5px;
+  border: none;
+  padding-left: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  outline: none;
+  position: relative;
+  color: #fff;
+}
+input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+.search {
+  position: absolute;
+  left: 20.5rem;
+  top: 11px;
+  transform: rotate(90deg);
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7);
+}
+.search:hover {
+  opacity: 1;
+}
+.location {
+  margin-left: 11px;
+  position: relative;
+  cursor: pointer;
+}
+.fa-location-pin {
+  position: relative;
+  opacity: 0.9;
+  font-size: 1.2rem;
+  animation-name: down;
+  animation: down infinite;
+  animation-duration: 750ms;
+  bottom: 0;
+}
+@keyframes down {
+  0% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: 4px;
+  }
+}
+.shadow {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  right: -3px;
+  top: 12px;
+  transform: rotateX(60deg);
+  opacity: 0.3;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 95vh;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  position: relative;
+  width: 12rem;
+  height: 18rem;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-right: 10px;
+  text-align: center;
+  padding: 1rem 5px 0;
+  cursor: pointer;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.box:hover {
+  width: 12.2rem;
+  height: 18.2rem;
+}
+
+.country {
+  font-size: 10px;
+  background-color: crimson;
+  color: #fff;
+  padding: 6px 8px;
+  border-radius: 3px;
+  border: none;
+}
+
+.city {
+  color: rgb(34, 34, 107);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.deg {
+  color: rgba(18, 36, 175, 0.861);
+  font-size: 3rem;
+  font-weight: 900;
+}
+figure {
+  height: 10rem;
+}
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: crimson;
+  font-size: 1.3rem;
+}
